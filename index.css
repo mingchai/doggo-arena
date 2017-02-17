@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  font-family: "LingWai SC", cursive;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+.teams {
+  display: flex;
+}
+
+.teams > * {
+  flex-basis: 50%;
+}
+
+.teams .team {
+  margin: 3px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: black;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.teams .team > *:last-child {
+  flex-grow: 1;
+}
+
+.teams .team.salmon {
+  background-color: salmon;
+}
+
+.teams .team.aquamarine {
+  background-color: aquamarine;
+}
+
+.teams .team > .title {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2em;
+}
+
+.teams .team > .roster {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: white;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.teams .team > .roster > * {
+  width: calc(100% - 6px);
+  margin: 3px;
+}
+
+@media (min-width: 825px) {
+  .team > .roster > * {
+    width: calc(50% - 6px);
+    margin: 3px;
+  }
+}
+
+.doggo {
+  width: 200px;
+  height: 200px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.doggo > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+
+#toxic-tim { background-image: url(./images/toxic_tim.jpg); }
+#bumble-bertha { background-image: url(./images/bumble_bertha.jpg); }
+#nina-the-ninja { background-image: url(./images/nina_the_ninja.jpg); }
+#larry-the-lion { background-image: url(./images/larry_the_lion.jpg); }
+#inbread-dog { background-image: url(./images/inbread_dog.jpg); }
+#four-fists-larry { background-image: url(./images/four_fists_phil.jpg); }
