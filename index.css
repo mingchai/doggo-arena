@@ -96,6 +96,15 @@ html * {
   border: solid 5px deepskyblue;
 }
 
+.doggo.fighter.hovered {
+  filter: grayscale(1);
+}
+
+#applicant-preview {
+  border: solid 5px gainsboro;
+  background-color: grey;
+}
+
 #toxic-tim { background-image: url(./images/toxic_tim.jpg); }
 #bumble-bertha { background-image: url(./images/bumble_bertha.jpg); }
 #nina-the-ninja { background-image: url(./images/nina_the_ninja.jpg); }
