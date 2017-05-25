@@ -1,10 +1,13 @@
 html {
   box-sizing: border-box;
-  font-family: "LingWai SC", cursive;
+  font-family: "Helvetica Neue", cursive;
+  font-weight: 200;
 }
 
 html * {
   box-sizing: inherit;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 .teams {
@@ -89,7 +92,7 @@ html * {
 .doggo > h1 {
   margin: 0;
   padding: 0;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 .doggo.fighter.selected {
