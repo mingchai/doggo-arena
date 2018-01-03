@@ -12,11 +12,7 @@ html * {
 
 .teams {
   display: flex;
-  width: 775px;
-}
-
-.teams > * {
-  flex-basis: 50%;
+  flex-flow: column;
 }
 
 .teams .team {
@@ -63,7 +59,7 @@ html * {
 }
 
 .teams .team > .roster > * {
-  width: calc(100% - 6px);
+  width: 200px;
   margin: 3px;
 }
 
