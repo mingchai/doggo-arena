@@ -53,6 +53,8 @@ document.querySelectorAll('.team > h1').forEach(teamTitle => {
 
 document.addEventListener('click', event => {
     const { target } = event;
+    console.log('target: ', target); // is the element that triggers the event in our case, the element that we click on
+    console.log('current target: ', event.currentTarget); // currentTarget is the element(node) that we attach addEventListener to
     if (!target.closest('.team')) {
         const selectedDoggo = getSelectedDoggo();
         if (selectedDoggo) {
