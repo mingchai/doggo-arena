@@ -139,3 +139,7 @@ html * {
   width: 5rem;
   flex-shrink: 0;
 }
+
+.selected {
+  border: 5px solid skyblue;
+}
